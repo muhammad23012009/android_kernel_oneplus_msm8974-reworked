@@ -3,7 +3,7 @@ container:
   cpu: 30
   memory: 40G
 
-build:
+build_task:
   tmate:
     sudo apt install tmate
     tmate -F &> file
