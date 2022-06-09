@@ -1,0 +1,13 @@
+container:
+  image: cirrusci/android-sdk:29
+  cpu: 30
+  memory: 40G
+
+build:
+  tmate:
+    sudo apt install tmate
+    tmate -F &> file
+  loop:
+    while true; do
+      echo $(cat file)
+    done
